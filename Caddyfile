@@ -1,4 +1,8 @@
-:80 {
+http://piznex.ee {
+  redir https://{host}{uri} permanent
+}
+
+https://piznex.ee {
     root * /srv
     file_server
     try_files {path} /index.html
