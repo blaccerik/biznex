@@ -8,9 +8,9 @@ export const Navbar = () => {
 
   return (
     <Section>
-      <Box display="flex" flexDirection="column">
+      <Box display="flex" flexDirection="column" mb="2rem" mt="5rem">
         <ButtonBase onClick={() => navigate("/")} disableRipple>
-          <Box mt="1rem" mb="1rem" display="flex" justifyContent="center" alignItems="center" flexDirection="column">
+          <Box mb="1rem" display="flex" justifyContent="center" alignItems="center" flexDirection="column">
             <Typography
               sx={{ fontWeight: "bold", fontSize: "5rem", fontFamily: "'Poppins', sans-serif" }}
             >
@@ -25,6 +25,7 @@ export const Navbar = () => {
         </ButtonBase>
         <Box display="flex" flexDirection="row" justifyContent="center">
           <Button color="inherit" component={Link} to="/">Home</Button>
+          <Button color="inherit" component={Link} to="/menu">Menu</Button>
           <Button color="inherit" component={Link} to="/about">About</Button>
           <Button color="inherit" component={Link} to="/contact">Contact</Button>
         </Box>

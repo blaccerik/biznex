@@ -5,6 +5,7 @@ export interface Post {
     tags: string[];
     views: number;
     userId: number;
+    user: string;
     imageUrl: string;
 }
 
